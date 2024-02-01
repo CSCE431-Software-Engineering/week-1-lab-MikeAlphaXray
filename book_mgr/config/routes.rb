@@ -4,4 +4,13 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "articles#index"
+  # config/routes.rb
+
+  resources :books do
+    member do
+      get 'delete', to: 'books#delete', as: 'delete_book'
+      delete 'delete', to: 'books#destroy'
+    end
+  end
+
 end
