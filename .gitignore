@@ -1,1 +1,3 @@
-book_mgr/tmp/*
+tmp
+coverage
+.DS_Store
